@@ -1,151 +1,203 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0b1320" />
   <title>Abhimanyu Gangani — Senior Developer Advocate (HPC • AI • Agents)</title>
-  <meta name="description" content="Senior Developer Advocate specializing in accelerated computing, HPC, and agentic AI. 40+ hackathons, training & infra readiness, and developer community impact."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="description" content="Senior Developer Advocate. 40+ hackathons. Infra readiness + hands-on enablement. Agentic AI. NVIDIA-aligned (CUDA, RAPIDS, TensorRT, Nsight).">
+
+  <!-- Open Graph / Twitter (update og-card when you have it) -->
+  <meta property="og:title" content="Abhimanyu Gangani — Senior Developer Advocate (HPC • AI • Agents)">
+  <meta property="og:description" content="40+ hackathons • 70–80% activation • Infra readiness + enablement • NVIDIA-aligned.">
+  <meta property="og:image" content="assets/og-card.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abhifetch.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- JSON-LD Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Abhimanyu Gangani",
+    "jobTitle":"Senior Developer Advocate",
+    "address":{"@type":"PostalAddress","addressLocality":"Cambridge","addressCountry":"UK"},
+    "email":"mailto:agangani97@gmail.com",
+    "url":"https://abhifetch.github.io",
+    "sameAs":["https://linkedin.com/in/abhi-gangani-084ba9147/"]
+  }
+  </script>
+
+  <!-- Font + CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <!-- Decorative background -->
-  <div class="bg">
-    <div class="bg-radial"></div>
-    <div class="bg-grid"></div>
-  </div>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./">
-        <span class="logo-dot"></span>
-        <span class="brand-name">Abhimanyu Gangani</span>
-      </a>
-      <nav class="nav">
-        <a href="#projects">POCs</a>
-        <a href="#hackathons">Hackathons</a>
-        <a href="#training">Training</a>
-        <a href="#talks">Talks</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <header class="wrap">
+    <nav class="nav">
+      <a href="#pocs" class="chip">POCs</a>
+      <a href="#hackathons" class="chip">Hackathons</a>
+      <a href="#training" class="chip">Training</a>
+      <a href="#talks" class="chip">Talks</a>
+      <a href="#contact" class="chip">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <!-- Hero -->
+  <main class="wrap">
+    <!-- HERO -->
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>
-            Senior Developer Advocate —
-            <span class="gradient-text mono">Accelerated Computing • HPC • Agentic AI</span>
-          </h1>
-          <p class="lead">
-            Cambridge, UK — <strong>Open to Relocation</strong> ·
-            <a href="mailto:agangani97@gmail.com">agangani97@gmail.com</a> ·
-            <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/abhi-gangani-084ba9147/">LinkedIn</a>
-          </p>
-          <p class="intro">
-            I help researchers and developers adopt accelerated AI/HPC by pairing
-            <strong>infrastructure readiness</strong> (GPU quotas, base images, dependencies, data/RBAC, observability)
-            with <strong>hands-on enablement</strong> (labs, mentor playbooks, interactive workshops) and tight
-            <strong>product feedback loops</strong> (bugs, feature requests, metrics).
-          </p>
+      <div class="hero-left">
+        <h1>Senior Developer Advocate<br><span class="muted">Accelerated Computing • HPC • Agentic AI</span></h1>
 
-          <div class="kpis">
-            <span class="pill" title="Hackathons & Bootcamps">
-              <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-              40+ hackathons/bootcamps
-            </span>
-            <span class="pill" title="Activation">
-              <svg class="i" viewBox="0 0 24 24"><path d="M20 7l-9 9-5-5"/></svg>
-              70–80% first-use activation
-            </span>
-            <span class="pill" title="Support Deflection">
-              <svg class="i" viewBox="0 0 24 24"><path d="M4 4h16v12H5l-1 4z"/></svg>
-              ~80% support deflection
-            </span>
-            <span class="pill" title="Engagement">
-              <svg class="i" viewBox="0 0 24 24"><path d="M4 12h16M12 4v16"/></svg>
-              +60% social engagement
-            </span>
-            <span class="pill" title="Fraud Catch">
-              <svg class="i" viewBox="0 0 24 24"><path d="M12 4l7 4v8l-7 4-7-4V8z"/></svg>
-              ~40% fraud catch
-            </span>
-          </div>
+        <p class="sub">
+          Cambridge, UK — <strong>Open to Relocation</strong> ·
+          <a href="mailto:agangani97@gmail.com">agangani97@gmail.com</a> ·
+          <a href="https://linkedin.com/in/abhi-gangani-084ba9147/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </p>
 
-          <div class="cta">
-            <a class="btn primary" href="mailto:agangani97@gmail.com">
-              <svg class="i" viewBox="0 0 24 24"><path d="M4 4h16v16H4z M22 6l-10 7L2 6"/></svg>
-              Contact
-            </a>
-            <a class="btn" href="resume.html">
-              <svg class="i" viewBox="0 0 24 24"><path d="M6 4h9l3 3v13H6z M6 9h12"/></svg>
-              View Résumé
-            </a>
-          </div>
+        <p class="intro">
+          I help researchers and developers adopt accelerated AI/HPC by pairing <strong>infrastructure readiness</strong> (GPU quotas, base images, dependencies, data/RBAC, observability) with
+          <strong>hands-on enablement</strong> (labs, mentor playbooks, interactive workshops) and tight <strong>product feedback loops</strong> (bugs, feature requests, metrics).
+          <br>
+          <strong>Actively ramping on CUDA, RAPIDS, TensorRT, Nsight;</strong> completed NVIDIA/DLI coursework: <em>Building RAG Agents with LLMs</em>.
+        </p>
+
+        <p class="lead">40+ hackathons • 70–80% activation • ~80% support deflection • +60% engagement • ~40% fraud catch</p>
+
+        <div class="cta">
+          <a class="btn primary" href="#contact">Contact</a>
+          <!-- Put your exported resume at repo root as resume.pdf -->
+          <a class="btn" href="resume.pdf" download>View / Download Résumé</a>
         </div>
-
-        <aside class="playbook card">
-          <h3>Day-0/1/2 Accelerator Playbook</h3>
-          <ol class="steps">
-            <li><strong>Day-0:</strong> Infra checks (quotas, base images), access & RBAC, smoke tests; mentor brief & agenda.</li>
-            <li><strong>Day-1:</strong> Quickstarts, model integration (LLMs/ML/DL), planner/executor agents, tool-use, memory, evaluation loops.</li>
-            <li><strong>Day-2:</strong> Publish/demo, observability, readouts; collect metrics & blocker taxonomy for product teams.</li>
-          </ol>
-        </aside>
       </div>
+
+      <aside class="hero-right card">
+        <h3>Day-0/1/2 Accelerator Playbook</h3>
+        <ol class="tight">
+          <li><strong>Day-0:</strong> Infra checks (quotas, base images), access & RBAC, smoke tests; mentor brief & agenda.</li>
+          <li><strong>Day-1:</strong> Quickstarts, model integration (LLMs/ML/DL), planner/executor agents, tool-use, memory, evaluation loops.</li>
+          <li><strong>Day-2:</strong> Publish/demo, observability, readouts; collect metrics & blocker taxonomy for product teams.</li>
+        </ol>
+      </aside>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Selected POCs / Projects</h2>
-          <p class="muted">Representative enablement assets used in hackathons & workshops.</p>
-        </div>
+    <!-- PROJECTS -->
+    <section id="pocs" class="section">
+      <h2>Selected POCs / Projects</h2>
+      <p class="muted">Representative enablement assets used in hackathons & workshops.</p>
 
-        <div class="grid cards-3">
-          <article class="card card-gradient">
+      <div class="grid">
+        <article class="card card-gradient">
+          <a class="card-link" href="https://github.com/" target="_blank" rel="noreferrer">
             <h3>E-commerce Support Assistant</h3>
-            <p>AI agent integrated with CRM for real-time order updates and triage → <strong>~80% ticket deflection</strong>. Reused as lab + starter repo.</p>
+            <p>AI agent integrated with CRM for live order updates & triage → <strong>~80% ticket deflection</strong>. Reused as lab + starter repo.</p>
             <div class="tags"><span>Agentic AI</span><span>uAgents</span><span>LangChain</span><span>LLM</span></div>
-          </article>
+          </a>
+        </article>
 
-          <article class="card card-gradient">
+        <article class="card card-gradient">
+          <a class="card-link" href="https://github.com/" target="_blank" rel="noreferrer">
             <h3>Twitter Engagement Agent</h3>
-            <p>Multi-agent (sentiment + content generation) with safety guardrails → <strong>+60% engagement</strong>. Demo + guide used in hackathons.</p>
+            <p>Multi-agent (sentiment + content) with safety guardrails → <strong>+60% engagement</strong>. Demo + guide used in hackathons.</p>
             <div class="tags"><span>CrewAI</span><span>OpenAI</span><span>Tool-use</span><span>Observability</span></div>
-          </article>
+          </a>
+        </article>
 
-          <article class="card card-gradient">
+        <article class="card card-gradient">
+          <a class="card-link" href="https://github.com/" target="_blank" rel="noreferrer">
             <h3>Ethereum Fraud Detector</h3>
-            <p>Agent + ML rules for suspicious-txn detection on-chain → <strong>~40% of test fraud flagged</strong>; webhook alerts; teaching lab.</p>
+            <p>Agent + ML rules for suspicious-txn detection on-chain → <strong>~40% test fraud flagged</strong>; webhook alerts; teaching lab.</p>
             <div class="tags"><span>Web3</span><span>uAgents</span><span>ML</span><span>APIs</span></div>
-          </article>
-        </div>
+          </a>
+        </article>
       </div>
     </section>
 
-    <!-- Hackathons -->
-    <section id="hackathons" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Hackathons & Bootcamps</h2>
-          <p class="muted">Universities, supercomputing centers, and enterprise partners across US/UK/India/Indonesia.</p>
-        </div>
+    <!-- HACKATHONS -->
+    <section id="hackathons" class="section">
+      <h2>Hackathons & Bootcamps</h2>
+      <p class="muted">Universities, supercomputing centers, and enterprise partners across the US/UK/India/Indonesia.</p>
 
-        <div class="grid cards-2">
-          <div class="card">
-            <ul class="bullets">
-              <li><strong>KPIs:</strong> time-to-first-agent/GPU, Day-2 publish rate, NPS, blocker taxonomy.</li>
-              <li><strong>Roles:</strong> agenda & mentor sourcing, infra assessment, office hours, escalation paths, readouts.</li>
-              <li><strong>Outputs:</strong> reproducible labs, version-pinned docs, starter repos, runbooks & smoke tests.</li>
-            </ul>
-          </div>
-          <div class="card kpi-stack">
-            <div class="kpi">
-              <span cla
+      <div class="grid">
+        <article class="card">
+          <h3>KPIs</h3>
+          <ul class="tight">
+            <li>Time-to-first-agent/GPU</li>
+            <li>Day-2 publish rate</li>
+            <li>NPS & blocker taxonomy</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Roles</h3>
+          <ul class="tight">
+            <li>Agenda & mentor sourcing</li>
+            <li>Infra assessment, office hours</li>
+            <li>Escalation paths, readouts</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Outputs</h3>
+          <ul class="tight">
+            <li>Reproducible labs, version-pinned docs</li>
+            <li>Starter repos & demos</li>
+            <li>Runbooks & smoke tests</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- TRAINING -->
+    <section id="training" class="section">
+      <h2>Training & Enablement</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Workshops & Labs</h3>
+          <p>Built/refined hands-on labs, quickstarts, mentor playbooks; delivered on-site & virtual sessions (10–500 attendees); achieved <strong>70–80% first-use activation</strong>.</p>
+        </article>
+
+        <article class="card">
+          <h3>NVIDIA Platform Coursework</h3>
+          <p>Completed NVIDIA Developer Program / DLI: <em>Building RAG Agents with LLMs</em> (self-paced, 2025). Actively ramping on <strong>CUDA, RAPIDS, TensorRT, Nsight</strong>.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TALKS -->
+    <section id="talks" class="section">
+      <h2>Talks & Content</h2>
+      <div class="grid">
+        <article class="card">
+          <p>Blogs/tutorials/videos on agentic & HPC-aligned workflows; demo apps & starter repos used by hackathon teams; post-event feedback reports with adoption metrics and bug/feature requests.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="grid">
+        <article class="card">
+          <p>Email: <a href="mailto:agangani97@gmail.com">agangani97@gmail.com</a><br>
+             LinkedIn: <a href="https://linkedin.com/in/abhi-gangani-084ba9147/" target="_blank" rel="noreferrer">linkedin.com/in/abhi-gangani-084ba9147/</a></p>
+          <p class="muted">For a PDF résumé, use the button above or <a href="resume.pdf" download>download here</a>.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© 2025 Abhimanyu Gangani • Built for GitHub Pages</p>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="sticky-cta">
+    <a class="btn primary" href="mailto:agangani97@gmail.com">Email</a>
+    <a class="btn" href="resume.pdf" download>Résumé</a>
+  </div>
+</body>
+</html>
